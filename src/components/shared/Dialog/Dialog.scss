@@ -1,0 +1,65 @@
+@import "../../../SASS/reset";
+@import "../../../SASS/variables";
+
+
+
+
+
+.modal {
+    position: absolute;
+    color: whitesmoke;
+    border-radius: 1rem;
+    padding: 1rem;
+    top: 40%;
+    left: 50%;
+    max-width: 50rem;
+   width: 100%;
+    transform: translate(-50%, -50%);
+  }
+  // .btn-form-submit {
+  //   @extend %btn-form-submit;
+  // }
+  
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 99999;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.801);
+  }
+  
+
+  
+.close-Modal {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 1.4rem;
+    color: white;
+   &:hover{
+    color: red;
+   }
+  }
+  
+  .dialog_form {
+    display: flex;
+    padding: 1rem 0.7rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: $dark-blue;
+  
+  }
+
+  .add-btn  {
+    display: flex;
+    align-items: center;
+
+    padding: 0.5rem 0.9rem;
+  
+  }

@@ -1,0 +1,64 @@
+.product_card {
+  background-color: #333;
+  width: 300px;
+  position: relative;
+  margin: 1rem 0;
+  border-radius: 1rem;
+}
+.product_card figure {
+  border-radius: 1rem 1rem 0 0;
+  background-color: rgb(206, 206, 206);
+  height: 10rem;
+}
+.product_card figure img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.badge_product {
+  position: absolute;
+  color: white;
+  width: 100px;
+  border-radius: 10px;
+  text-align: center;
+  top: -0.6rem;
+}
+
+.card_body {
+  position: relative;
+  height: 110px;
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 0.4rem;
+  color: white;
+}
+.card_body h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.card_body button {
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: rgb(206, 206, 206);
+  width: 90%;
+  padding: 0.4rem 0;
+  border-radius: 5px;
+  bottom: 10px;
+  left: 5%;
+  position: absolute;
+  transition: 0.3s ease-out;
+}
+.card_body button:hover {
+  background-color: rgb(38, 38, 71);
+  color: white;
+}
+
+.inStock {
+  background-color: green;
+}
+
+.rupture {
+  background-color: red;
+}/*# sourceMappingURL=productItems.css.map */

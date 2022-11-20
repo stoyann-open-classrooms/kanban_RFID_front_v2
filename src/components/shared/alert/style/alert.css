@@ -1,0 +1,19 @@
+.alert_box {
+  position: absolute;
+  z-index: 9999999;
+  padding: 1.4rem;
+  right: 1rem;
+  left: 1rem;
+  top: 0.7rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.success {
+  background-color: green;
+}
+
+.error {
+  background-color: red;
+  color: white;
+}/*# sourceMappingURL=alert.css.map */

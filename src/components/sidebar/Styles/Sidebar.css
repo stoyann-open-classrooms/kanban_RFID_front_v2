@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100;1,300&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(146, 146, 146);
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+input, textarea {
+  border: none;
+  width: 100%;
+  background-color: rgb(199, 199, 199);
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  padding: 11vh 1rem;
+  min-height: 100vh;
+}
+main h1 {
+  text-align: center;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    padding-left: 7rem;
+  }
+}
+img {
+  height: 1.4rem;
+}
+
+.container-sidebar {
+  display: flex;
+  transition: transform 0.2s ease-out;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  z-index: 999999;
+}
+
+.visible-nav {
+  transform: translateX(0px) !important;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  width: 6rem;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  background-color: #333;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  position: relative;
+  height: 3rem;
+  width: 3rem;
+  margin-top: 4rem;
+  background-color: rgb(146, 146, 146);
+  cursor: pointer;
+}
+.sidebar a:active {
+  transform: scale(0.98);
+}
+
+a.active {
+  background-color: rgb(38, 38, 71);
+}
+
+.sidebar ul li {
+  width: 2rem;
+  text-align: center;
+  height: 2rem;
+}
+
+.toggle-nav-btn {
+  z-index: 150;
+  left: 1rem;
+  width: 10px;
+  height: 40px;
+  background-color: #333;
+  cursor: pointer;
+  z-index: 999999999;
+}
+
+.toggle-nav-btn img {
+  width: 5rem;
+  top: 1.8rem;
+  z-index: 999999;
+  position: fixed;
+  left: 0.2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .container-sidebar {
+    transform: translateX(-100%);
+  }
+  .sidebar {
+    width: 5rem;
+  }
+}/*# sourceMappingURL=Sidebar.css.map */

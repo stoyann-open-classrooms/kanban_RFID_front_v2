@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100;1,300&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(146, 146, 146);
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+input, textarea {
+  border: none;
+  width: 100%;
+  background-color: rgb(199, 199, 199);
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  padding: 11vh 1rem;
+  min-height: 100vh;
+}
+main h1 {
+  text-align: center;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    padding-left: 7rem;
+  }
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 1rem;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  right: 0;
+  height: 11vh;
+}
+
+.time {
+  letter-spacing: 0.1rem;
+}
+
+.navbar_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar_center .time {
+  font-size: 0.7rem;
+}
+
+.navbar_menu {
+  display: none;
+}
+
+.navbar_end {
+  position: relative;
+}
+.navbar_end .indicator_item_badge {
+  position: absolute;
+  top: -0.7rem;
+  right: -0.3rem;
+  background-color: rgb(221, 40, 40);
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.indicator button {
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.3rem;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: rgb(38, 38, 71);
+  color: white;
+}
+.indicator button:hover {
+  color: rgb(217, 224, 234);
+}/*# sourceMappingURL=navbar.css.map */
