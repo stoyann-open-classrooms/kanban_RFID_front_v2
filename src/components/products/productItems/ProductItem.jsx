@@ -14,12 +14,14 @@ function ProductItem({ product }) {
         </>
       )}
       <figure>
-        <img src={NoPhoto} alt="" />
-        {/* <img
-     
-          src={`http://localhost:5058/` + product.image}
+        {/* <img src={NoPhoto} alt="" /> */}
+        
+        
+         <img
+
+          src={`http://localhost:5058/uploads/${product.image}`}
           alt={product.name}
-        /> */}
+        /> 
       </figure>
       <div className="card_body">
         <h2 className="card-title">{product.name}</h2>
