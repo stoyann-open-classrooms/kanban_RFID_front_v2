@@ -21,6 +21,17 @@ export const KanbanProvider = ({ children }) => {
       payload: data.data,
     });
   };
+  // get a single kanban
+  const fetchKanban = async (kanbanId) => {
+    setLoading();
+    const response = await fetch(`http://localhost:5058/api/v1/kanbans/${kanbanId}`);
+    const data = await response.json();
+    
+    dispatch({
+      type: "GET_KANBAN",
+      payload: data,
+    });
+  };
 
 
   const addKanban = async(newKanban) => {
@@ -37,8 +48,10 @@ export const KanbanProvider = ({ children }) => {
     <KanbanContext.Provider
       value={{
         kanbans: state.kanbans,
+        kanban: state.kanban,
         loading: state.loading,
         fetchKanbans,
+        fetchKanban,
         addKanban,
       }}
     >

@@ -47,6 +47,7 @@ export const ProductProvider = ({ children }) => {
       value={{
         products: state.products,
         loading: state.loading,
+        product: state.product,
         fetchProducts,
         addProduct,
         getProduct,
