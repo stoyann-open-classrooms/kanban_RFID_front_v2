@@ -1,0 +1,59 @@
+.banner {
+  margin-top: 1rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  .banner_img {
+    width: 50%;
+    max-width: 400px;
+    height: 100%;
+    position: relative;
+  
+    img{
+        width: 100%;
+        height: 10rem;
+        object-fit: contain;
+    }
+  }
+
+}
+
+.banner-txt{
+    h1{
+         color: blue;       
+    }
+}
+
+.add-image{
+    font-size: 1.2rem;
+    position: absolute;
+    background-color: blue;
+    padding: 0.2rem;
+    border-radius: 10px;
+  
+}
+.product-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    margin: 1.4rem auto;
+ 
+}
+.box{
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 10rem;
+}
+.min{
+    background-color: green;
+}
+.moy{
+    background-color: orange;
+}
+.max{
+    background-color: red;
+}
